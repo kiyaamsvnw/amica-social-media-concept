@@ -1,0 +1,208 @@
+body {
+  font-family: "Geologica", Arial, sans-serif;
+  margin: 0;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  background: linear-gradient(-45deg, #FEC8D8, #E7A8BC, #A1C4FD, #7DA6F0, #C2E9FB, #97D4F4);
+
+  background-size: 400% 400%;
+  animation: gradientShift 30s ease infinite;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.welcome-message {
+  font-size: 40px;
+  font-weight:500;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #8c78ad;
+}
+
+.login-form {
+  background: linear-gradient(to left, #FEC8D8, #A1C4FD, #C2E9FB);
+  padding: 20px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+
+  display: flex;
+  flex-direction: column;
+  
+  justify-content: center;
+  align-items: center;
+
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+  opacity: 0.6;
+}
+
+.first-name, .last-name {
+  border-radius: 15px;
+  border: 1px solid #7DA6F0;
+  height: 30px;
+  width: 200px;
+  font-family: "Geologica", Arial, sans-serif;
+  padding: 0 6px;
+}
+
+.first-name {
+  margin-right: 4px;
+}
+
+.email {
+  margin-top: 9px;
+  border-radius: 15px;
+  border: 1px solid #7DA6F0;
+  height: 30px;
+  width: 420px;
+  font-family: "Geologica", Arial, sans-serif;
+  padding: 0 6px;
+}
+
+.password {
+  margin-top: 9px;
+  margin-bottom: 12px;
+  border-radius: 15px;
+  border: 1px solid #7DA6F0;
+  height: 30px;
+  width: 420px;
+  font-family: "Geologica", Arial, sans-serif;
+  padding: 0 6px;
+}
+
+.first-name:hover, .last-name:hover, .email:hover, .password:hover {
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.6);
+  border-color:rgba(255, 255, 255, 0.6);
+
+}
+
+button {
+  border-radius: 25px;
+  border: none;
+  box-shadow: 0 0 5px rgba(110, 110, 110, 0.2);
+
+  padding-left: 185px;
+  padding-right: 185px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+
+  font-family: "Geologica", Arial, sans-serif;
+  font-size: 18px;
+  color:#C2E9FB;
+  cursor: pointer;
+
+  background: linear-gradient(to right, #E7A8BC, #7DA6F0, #97D4F4);
+
+  transition: padding 0.4s, 
+    box-shadow 0.4s,
+    background 0.4s;
+}
+
+.login-button {
+  padding-left: 194px;
+  padding-right: 194px;
+}
+
+button a {
+  text-decoration: none;
+}
+
+button:hover {
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.6);
+  background: white;
+  color: #7DA6F0;
+}
+
+button:active {
+  background: linear-gradient(to right, #E7A8BC, #7DA6F0, #97D4F4);
+  color: #C2E9FB;
+}
+
+.sign-up-div {
+  margin-top: 8px;
+  font-size: 14px;
+  color: rgb(85, 93, 105);
+}
+
+.icons {
+  width: 65px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  cursor: pointer;
+}
+
+img {
+  height: 28px;
+  width: 28px;
+  object-fit: contain;
+  border-radius: 14px;
+
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+img:hover {
+  border:rgba(255, 255, 255, 0.9);
+  box-shadow:0 0 20px rgba(255, 255, 255, 0.9);
+
+}
+
+.member-message {
+  font-size: 14px;
+  color: rgb(85, 93, 105);
+  cursor: pointer;
+}
+
+.login-here:hover {
+  text-decoration: underline;
+  color: #2a4b80;
+}
+
+.forgot-password {
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-size: 13px;
+  color: rgb(85, 93, 105);
+
+  display: flex;
+  justify-content: end;
+  cursor: pointer;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+  color: #2a4b80;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:baseline;
+
+  margin-top: 12px;
+
+  font-size: 13px;
+  color: rgb(108, 117, 133);
+}
